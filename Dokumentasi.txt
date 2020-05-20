@@ -1,0 +1,79 @@
+                    Dokumentasi toko online
+                    ***********************
+
+sumber 
+    - chanel yt framework indonesia
+
+bahan 
+    - codeigniter 3.1
+    - sb admin 2 (bootstrap)
+
+text editor
+    - vs code 
+
+- setting config
+    - masuk ke folder application config (semua config ada di sini)
+        - autoload.php
+            > $autoload['helper'] = array('url');
+            > $autoload['libraries'] = array('database');
+            > $autoload['model'] = array('model_barang');
+
+        - config.php
+            > $config['base_url'] = 'http://localhost/codeigniter/toko_online_CI/';
+        - database.php
+            > $db['default'] = array(
+                'dsn'	=> '',
+                'hostname' => 'localhost',
+                'username' => 'root',
+                'password' => '',
+                'database' => 'toko_online',
+                'dbdriver' => 'mysqli',
+                'dbprefix' => '',
+        - route.php
+            > $route['default_controller'] = 'dashboard';
+
+- config assets sb admin
+    - menambahkan | pada link href
+        - <?php echo base_url() ?>/
+
+- memecah vies dashboard menjadi 4 bagian
+    - templates
+        - header.php
+        - sidebar.php
+        - footer.php
+    - dashboard.php
+
+- membuat database 
+    - nama  : toko_online
+        nama table = tb_barang
+
+- menampilkan data  dengan card bootstrap
+- menambahkan slide (claousure bootstrap)
+- membuat halaman admin
+    - membuat templates_admin
+        copikan isi file template ke sini
+- menghilangkan index.php pada url dengan  .htaccess
+- menampilkan dan membuat input produk di halaman admin
+- membuat update dan delete
+- menambahkan feture add to char atau tambah ke keranjang
+- menambahkan view keranjangan dan total belanjaan
+- menghapus item keranjang dan pembayaran
+- membuat halaman invoice (rekapan pesanan atau pembayaran)
+    -> menambakan tb invoice dan tb pesanan 
+- membuat detail invoice penjualan
+- membuat detail produk
+- membuat kategori produk 
+- mengelola stok barang (menggunakan trigger)
+- login user 
+- registrasi akun
+- log out 
+
+
+
+
+
+
+
+
+
+NB : commit in github

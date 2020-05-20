@@ -105,7 +105,7 @@
                   <?php if($this->session->userdata('username')) { ?>
                     <li><div>Selamat Datang <?php echo $this->session->userdata('username'); ?> </div> </li>
 
-                    <li><?php echo anchor('auth/logout', 'Log-out' ); ?> </li>
+                    <li>&nbsp;<button class="btn btn-primary text-bg-white"> <?php echo anchor('auth/logout', 'Log-out' ); ?> </button></li>
                   <?php } else { ?>
                     <li><?php echo anchor('auth/login', 'Log-in'); ?>  </li>
                   <?php } ?>       

@@ -131,10 +131,10 @@
               </ul>
               <div class="topbar-divider d-none d-sm-block"></div>
                 <ul class="nav navbar-nav navbar-right">
-                  <?php if($this->session->userdata("username")) { ?>
-                    <li><div>Selamat Datang <?php echo $this->session->userdata("username"); ?> </div> </li>
-
-                    <li><?php echo anchor('auth/logout', 'Log-out' ); ?> </li>
+                  <?php if($this->session->userdata('username')) { ?>
+                    <li><div>Selamat Datang &nbsp;<?php echo $this->session->userdata('username') ?> </div> </li>
+                    
+                    <li> &nbsp; <?php echo anchor('auth/logout', 'Log-out'); ?> </li>
                   <?php } else { ?>
                     <li><?php echo anchor('auth/login', 'Log-in'); ?>  </li>
                   <?php } ?>       
